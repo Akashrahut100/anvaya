@@ -1,4 +1,9 @@
-# Anvaya (अन्वय) - Comprehensive Python Mathematics Library
+<p align="center">
+  <img src="docs/assets/anvaya.png" alt="Anvaya Logo" width="300"/>
+</p>
+
+<h1 align="center">Anvaya (अन्वय)</h1>
+<h3 align="center">Comprehensive Python Mathematics Library</h3>
 
 [![PyPI version](https://badge.fury.io/py/anvaya.svg)](https://badge.fury.io/py/anvaya)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
