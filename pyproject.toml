@@ -1,0 +1,106 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "anvaya"
+version = "1.0.0"
+description = "Anvaya (अन्वय) - A comprehensive Python mathematics library inspired by ancient Indian mathematical traditions"
+authors = [{name = "Akash Rahut"}]
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+keywords = [
+    "mathematics", "algebra", "calculus", "linear-algebra", 
+    "statistics", "probability", "graph-theory", "numerical-methods",
+    "optimization", "symbolic-math", "python"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Typing :: Typed",
+]
+dependencies = [
+    "numpy>=1.21.0,<3.0.0",
+    "scipy>=1.7.0,<2.0.0",
+    "sympy>=1.10,<2.0.0",
+    "networkx>=2.6,<4.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "hypothesis>=6.0",
+    "ruff>=0.1.0",
+    "mypy>=1.0",
+    "pre-commit>=3.0",
+]
+docs = [
+    "mkdocs>=1.5",
+    "mkdocs-material>=9.0",
+    "mkdocstrings[python]>=0.24",
+]
+all = ["anvaya[dev,docs]"]
+
+[project.urls]
+Homepage = "https://github.com/Akashrahut100/anvaya"
+Documentation = "https://anvaya.readthedocs.io"
+Repository = "https://github.com/Akashrahut100/anvaya"
+Changelog = "https://github.com/Akashrahut100/anvaya/blob/main/CHANGELOG.md"
+"Bug Tracker" = "https://github.com/Akashrahut100/anvaya/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["anvaya*"]
+
+[tool.setuptools.package-data]
+anvaya = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = [
+    "-v",
+    "--cov=anvaya",
+    "--cov-report=html",
+    "--cov-report=term-missing",
+]
+markers = [
+    "slow: marks tests as slow (deselect with '-m not slow')",
+    "numerical: tests involving numerical methods",
+]
+
+[tool.coverage.run]
+source = ["anvaya"]
+omit = ["*/__pycache__/*", "*/tests/*"]
+
+[tool.ruff]
+target-version = "py38"
+line-length = 100
+select = [
+    "E",      # pycodestyle errors
+    "W",      # pycodestyle warnings
+    "F",      # Pyflakes
+    "I",      # isort
+    "B",      # flake8-bugbear
+    "UP",     # pyupgrade
+]
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_ignores = true
+ignore_missing_imports = true
+
