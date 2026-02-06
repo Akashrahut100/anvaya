@@ -56,12 +56,12 @@ Since Anvaya covers 14+ mathematical domains, we have detailed guides for each. 
 
 | Category | Detailed Guide | API Reference |
 | :--- | :--- | :--- |
-| **Getting Started** | [Installation](docs/installation.md) \| [Quick Start](docs/quickstart.md) | - |
-| **Core domains** | [Algebra](docs/algebra.md) \| [Linear Algebra](docs/linear_algebra.md) \| [Calculus](docs/calculus.md) | [API](docs/api_reference/index.md) |
-| **Probability & Stats** | [Probability](docs/probability.md) \| [Statistics](docs/statistics.md) | [API](docs/api_reference/statistics.md) |
-| **Advanced Math**| [Complex Analysis](docs/complex_analysis.md) \| [Number Theory](docs/number_theory.md) \| [Differential Eqs](docs/differential_equations.md) | [API](docs/api_reference/number_theory.md) |
-| **Applied Math** | [Graph Theory](docs/graph_theory.md) \| [Numerical Methods](docs/numerical.md) \| [Optimization](docs/optimization.md) | [API](docs/api_reference/numerical.md) |
-| **Discrete & Others**| [Discrete Math](docs/discrete.md) \| [Vector Calculus](docs/vector_calculus.md) \| [Symbolic Engine](docs/symbolic_engine.md) | [API](docs/api_reference/symbolic.md) |
+| **Getting Started** | [Installation](https://github.com/Akashrahut100/anvaya/blob/master/docs/installation.md) \| [Quick Start](https://github.com/Akashrahut100/anvaya/blob/master/docs/quickstart.md) | - |
+| **Core domains** | [Algebra](https://github.com/Akashrahut100/anvaya/blob/master/docs/algebra.md) \| [Linear Algebra](https://github.com/Akashrahut100/anvaya/blob/master/docs/linear_algebra.md) \| [Calculus](https://github.com/Akashrahut100/anvaya/blob/master/docs/calculus.md) | [API](https://github.com/Akashrahut100/anvaya/blob/master/docs/api_reference/index.md) |
+| **Probability & Stats** | [Probability](https://github.com/Akashrahut100/anvaya/blob/master/docs/probability.md) \| [Statistics](https://github.com/Akashrahut100/anvaya/blob/master/docs/statistics.md) | [API](https://github.com/Akashrahut100/anvaya/blob/master/docs/api_reference/statistics.md) |
+| **Advanced Math**| [Complex Analysis](https://github.com/Akashrahut100/anvaya/blob/master/docs/complex_analysis.md) \| [Number Theory](https://github.com/Akashrahut100/anvaya/blob/master/docs/number_theory.md) \| [Differential Eqs](https://github.com/Akashrahut100/anvaya/blob/master/docs/differential_equations.md) | [API](https://github.com/Akashrahut100/anvaya/blob/master/docs/api_reference/number_theory.md) |
+| **Applied Math** | [Graph Theory](https://github.com/Akashrahut100/anvaya/blob/master/docs/graph_theory.md) \| [Numerical Methods](https://github.com/Akashrahut100/anvaya/blob/master/docs/numerical.md) \| [Optimization](https://github.com/Akashrahut100/anvaya/blob/master/docs/optimization.md) | [API](https://github.com/Akashrahut100/anvaya/blob/master/docs/api_reference/numerical.md) |
+| **Discrete & Others**| [Discrete Math](https://github.com/Akashrahut100/anvaya/blob/master/docs/discrete.md) \| [Vector Calculus](https://github.com/Akashrahut100/anvaya/blob/master/docs/vector_calculus.md) \| [Symbolic Engine](https://github.com/Akashrahut100/anvaya/blob/master/docs/symbolic_engine.md) | [API](https://github.com/Akashrahut100/anvaya/blob/master/docs/api_reference/symbolic.md) |
 
 ---
 
@@ -105,7 +105,7 @@ print(f"Roots: {roots}")  # [-3]
 
 ## 🧮 Domain Guides
 
-### 1. [Algebra](docs/algebra.md)
+### 1. [Algebra](https://github.com/Akashrahut100/anvaya/blob/master/docs/algebra.md)
 Handle equations, polynomials, and simplifications with ease.
 
 ```python
@@ -123,7 +123,7 @@ expr = x**2 + 2*x + 1
 print(algebra.factor_poly(expr))  # (x + 1)**2
 ```
 
-### 2. [Linear Algebra](docs/linear_algebra.md)
+### 2. [Linear Algebra](https://github.com/Akashrahut100/anvaya/blob/master/docs/linear_algebra.md)
 Perform matrix operations with high precision and safe error handling.
 
 ```python
@@ -147,7 +147,7 @@ x = la.solve_linear_system(A, b)
 print(f"Solution: {x}") # [1.0, 2.0]
 ```
 
-### 3. [Calculus](docs/calculus.md)
+### 3. [Calculus](https://github.com/Akashrahut100/anvaya/blob/master/docs/calculus.md)
 Perform symbolic differentiation, integration, and limit calculations.
 
 ```python
@@ -167,7 +167,7 @@ print(integral)  # 1/3
 print(calculus.limit(1/x, x, 0, direction='+'))  # oo (Infinity)
 ```
 
-### 4. [Probability & Statistics](docs/probability.md)
+### 4. [Probability & Statistics](https://github.com/Akashrahut100/anvaya/blob/master/docs/probability.md)
 Modern API for distributions and descriptive statistics.
 
 ```python
@@ -190,7 +190,7 @@ prob_a_given_b = prob.bayes_theorem(p_b_given_a=0.9, p_a=0.01, p_b=0.05)
 print(f"Probability: {prob_a_given_b}") # 0.18
 ```
 
-### 5. [Number Theory](docs/number_theory.md)
+### 5. [Number Theory](https://github.com/Akashrahut100/anvaya/blob/master/docs/number_theory.md)
 Prime numbers, modular arithmetic, and ancient algorithms.
 
 ```python
@@ -209,7 +209,7 @@ print(nt.mod_inverse(3, 11))  # 4 (3*4 = 12 ≡ 1 mod 11)
 print(nt.gcd(48, 18))  # 6
 ```
 
-### 6. [Numerical Methods](docs/numerical.md)
+### 6. [Numerical Methods](https://github.com/Akashrahut100/anvaya/blob/master/docs/numerical.md)
 Root finding and numerical integration when symbolic math isn't enough.
 
 ```python

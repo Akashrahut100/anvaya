@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "anvaya"
-version = "1.0.1"
+version = "1.0.2"
 description = "Anvaya (अन्वय) - A comprehensive Python mathematics library inspired by ancient Indian mathematical traditions"
 authors = [{name = "Akash Rahut"}]
 readme = "README.md"
@@ -57,7 +57,7 @@ all = ["anvaya[dev,docs]"]
 
 [project.urls]
 Homepage = "https://github.com/Akashrahut100/anvaya"
-Documentation = "https://anvaya.readthedocs.io"
+Documentation = "https://github.com/Akashrahut100/anvaya/tree/master/docs"
 Repository = "https://github.com/Akashrahut100/anvaya"
 Changelog = "https://github.com/Akashrahut100/anvaya/blob/main/CHANGELOG.md"
 "Bug Tracker" = "https://github.com/Akashrahut100/anvaya/issues"
