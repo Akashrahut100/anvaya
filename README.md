@@ -1,9 +1,18 @@
 <p align="center">
-  <img src="docs/assets/anvaya.png" alt="Anvaya Logo" width="300"/>
+  <img src="https://raw.githubusercontent.com/Akashrahut100/anvaya/master/docs/assets/anvaya.png" alt="Anvaya Logo" width="300">
 </p>
 
 <h1 align="center">Anvaya (अन्वय)</h1>
-<h3 align="center">Comprehensive Python Mathematics Library</h3>
+<h3 align="center">A Comprehensive Python Mathematics Library</h3>
+
+<p align="center">
+  <a href="https://badge.fury.io/py/anvaya"><img src="https://badge.fury.io/py/anvaya.svg" alt="PyPI version"></a>
+  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
+  <a href="https://www.python.org/downloads/"><img src="https://img.shields.io/badge/python-3.8+-blue.svg" alt="Python 3.8+"></a>
+  <a href="https://github.com/Akashrahut100/anvaya/graphs/commit-activity"><img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" alt="Maintenance"></a>
+</p>
+
+---
 
 [![PyPI version](https://badge.fury.io/py/anvaya.svg)](https://badge.fury.io/py/anvaya)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
