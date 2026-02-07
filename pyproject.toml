@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "anvaya"
-version = "1.0.3"
+version = "1.0.4"
 description = "Anvaya (अन्वय) - A comprehensive Python mathematics library inspired by ancient Indian mathematical traditions"
 authors = [{name = "Akash Rahut"}]
 readme = "README.md"
