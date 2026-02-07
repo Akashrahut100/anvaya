@@ -33,17 +33,17 @@ Anvaya is a production-ready, high-performance mathematics library for Python. I
   - [1. Algebra](#1-algebra)
   - [2. Linear Algebra](#2-linear-algebra)
   - [3. Calculus](#3-calculus)
-  - [4. Probability & Statistics](#4-probability--statistics)
-  - [5. Number Theory](#5-number-theory)
-  - [6. Numerical Methods](#6-numerical-methods)
-  - [7. Complex Analysis](https://github.com/Akashrahut100/anvaya/blob/master/docs/complex_analysis.md)
-  - [8. Differential Equations](https://github.com/Akashrahut100/anvaya/blob/master/docs/differential_equations.md)
-  - [9. Graph Theory](https://github.com/Akashrahut100/anvaya/blob/master/docs/graph_theory.md)
-  - [10. Optimization](https://github.com/Akashrahut100/anvaya/blob/master/docs/optimization.md)
-  - [11. Discrete Math](https://github.com/Akashrahut100/anvaya/blob/master/docs/discrete.md)
-  - [12. Vector Calculus](https://github.com/Akashrahut100/anvaya/blob/master/docs/vector_calculus.md)
-  - [13. Symbolic Engine](#-symbolic-engine)
-  - [14. Statistics](https://github.com/Akashrahut100/anvaya/blob/master/docs/statistics.md)
+  - [4. Probability](#4-probability)
+  - [5. Statistics](#5-statistics)
+  - [6. Number Theory](#6-number-theory)
+  - [7. Numerical Methods](#7-numerical-methods)
+  - [8. Complex Analysis](https://github.com/Akashrahut100/anvaya/blob/master/docs/complex_analysis.md)
+  - [9. Differential Equations](https://github.com/Akashrahut100/anvaya/blob/master/docs/differential_equations.md)
+  - [10. Graph Theory](https://github.com/Akashrahut100/anvaya/blob/master/docs/graph_theory.md)
+  - [11. Optimization](https://github.com/Akashrahut100/anvaya/blob/master/docs/optimization.md)
+  - [12. Discrete Math](https://github.com/Akashrahut100/anvaya/blob/master/docs/discrete.md)
+  - [13. Vector Calculus](https://github.com/Akashrahut100/anvaya/blob/master/docs/vector_calculus.md)
+  - [14. Symbolic Engine](#-symbolic-engine)
 - [🛠 Advanced Features](#-advanced-features)
 - [🧬 Symbolic Engine](#-symbolic-engine)
 - [🤝 Contributing](#-contributing)
@@ -167,17 +167,11 @@ print(integral)  # 1/3
 print(calculus.limit(1/x, x, 0, direction='+'))  # oo (Infinity)
 ```
 
-### 4. [Probability & Statistics](https://github.com/Akashrahut100/anvaya/blob/master/docs/probability.md)
-Modern API for distributions and descriptive statistics.
+### 4. [Probability](https://github.com/Akashrahut100/anvaya/blob/master/docs/probability.md)
+Modern API for probability distributions and Bayesian inference.
 
 ```python
 from anvaya import probability as prob
-from anvaya import statistics as stats
-
-# Statistics
-data = [10, 20, 20, 30, 40, 50]
-print(stats.mean(data))    # 28.33
-print(stats.median(data))  # 25.0
 
 # Probability Distributions
 normal = prob.Normal(mean=0, std=1)
@@ -190,7 +184,21 @@ prob_a_given_b = prob.bayes_theorem(p_b_given_a=0.9, p_a=0.01, p_b=0.05)
 print(f"Probability: {prob_a_given_b}") # 0.18
 ```
 
-### 5. [Number Theory](https://github.com/Akashrahut100/anvaya/blob/master/docs/number_theory.md)
+### 5. [Statistics](https://github.com/Akashrahut100/anvaya/blob/master/docs/statistics.md)
+Descriptive statistics and data analysis tools.
+
+```python
+from anvaya import statistics as stats
+
+# Descriptive Statistics
+data = [10, 20, 20, 30, 40, 50]
+print(stats.mean(data))    # 28.33
+print(stats.median(data))  # 25.0
+print(stats.mode(data))    # 20
+print(stats.std(data))     # Standard deviation
+```
+
+### 6. [Number Theory](https://github.com/Akashrahut100/anvaya/blob/master/docs/number_theory.md)
 Prime numbers, modular arithmetic, and ancient algorithms.
 
 ```python
@@ -209,7 +217,7 @@ print(nt.mod_inverse(3, 11))  # 4 (3*4 = 12 ≡ 1 mod 11)
 print(nt.gcd(48, 18))  # 6
 ```
 
-### 6. [Numerical Methods](https://github.com/Akashrahut100/anvaya/blob/master/docs/numerical.md)
+### 7. [Numerical Methods](https://github.com/Akashrahut100/anvaya/blob/master/docs/numerical.md)
 Root finding and numerical integration when symbolic math isn't enough.
 
 ```python
