@@ -229,6 +229,108 @@ root = numerical.root_find(f, 1.5)
 print(f"Square root of 2 is approx: {root:.6f}") # 1.414214
 ```
 
+### 8. [Complex Analysis](https://github.com/Akashrahut100/anvaya/blob/master/docs/complex_analysis.md)
+Work with complex numbers and their operations.
+
+```python
+from anvaya import complex_analysis as ca
+
+# Create complex numbers
+z1 = ca.complex_num(3, 4)  # 3 + 4i
+z2 = ca.complex_num(1, 2)  # 1 + 2i
+
+# Operations
+print(ca.add(z1, z2))       # (4+6j)
+print(ca.magnitude(z1))     # 5.0
+print(ca.phase(z1))         # 0.9273 radians
+```
+
+### 9. [Differential Equations](https://github.com/Akashrahut100/anvaya/blob/master/docs/differential_equations.md)
+Solve ordinary differential equations numerically.
+
+```python
+from anvaya import differential_equations as de
+
+# Solve dy/dx = y with y(0) = 1
+def dydt(t, y): return y
+solution = de.solve_ode(dydt, y0=1, t_span=(0, 2))
+print(solution)  # Exponential growth solution
+```
+
+### 10. [Graph Theory](https://github.com/Akashrahut100/anvaya/blob/master/docs/graph_theory.md)
+Create and analyze graphs and networks.
+
+```python
+from anvaya import graph_theory as gt
+
+# Create a graph
+g = gt.Graph()
+g.add_edge('A', 'B', weight=4)
+g.add_edge('B', 'C', weight=3)
+g.add_edge('A', 'C', weight=10)
+
+# Shortest path
+path = gt.shortest_path(g, 'A', 'C')
+print(path)  # ['A', 'B', 'C'] with cost 7
+```
+
+### 11. [Optimization](https://github.com/Akashrahut100/anvaya/blob/master/docs/optimization.md)
+Find minimum and maximum values of functions.
+
+```python
+from anvaya import optimization as opt
+
+# Minimize f(x) = (x-3)^2
+def f(x): return (x - 3)**2
+result = opt.minimize(f, x0=0)
+print(f"Minimum at x = {result:.2f}")  # 3.0
+```
+
+### 12. [Discrete Math](https://github.com/Akashrahut100/anvaya/blob/master/docs/discrete.md)
+Combinatorics, permutations, and set operations.
+
+```python
+from anvaya import discrete
+
+# Combinations and Permutations
+print(discrete.combinations(5, 2))   # 10
+print(discrete.permutations(5, 2))   # 20
+print(discrete.factorial(5))         # 120
+```
+
+### 13. [Vector Calculus](https://github.com/Akashrahut100/anvaya/blob/master/docs/vector_calculus.md)
+Operations on vector fields and multivariable functions.
+
+```python
+from anvaya import vector_calculus as vc
+
+# Vector operations
+v1 = [1, 2, 3]
+v2 = [4, 5, 6]
+
+print(vc.dot_product(v1, v2))    # 32
+print(vc.cross_product(v1, v2))  # [-3, 6, -3]
+print(vc.magnitude(v1))          # 3.74
+```
+
+### 14. [Symbolic Engine](https://github.com/Akashrahut100/anvaya/blob/master/docs/symbolic_engine.md)
+Create and manipulate symbolic mathematical expressions.
+
+```python
+from anvaya.symbolic import var, simplify
+
+x, y = var('x'), var('y')
+
+# Build expressions
+expr = (x + y)**2
+expanded = expr.expand()
+print(expanded)  # x**2 + 2*x*y + y**2
+
+# Simplify
+expr2 = (x**2 - 1)/(x - 1)
+print(simplify(expr2))  # x + 1
+```
+
 ---
 
 ## 🛠 Advanced Features
