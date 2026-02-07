@@ -14,11 +14,6 @@
 
 ---
 
-[![PyPI version](https://badge.fury.io/py/anvaya.svg)](https://badge.fury.io/py/anvaya)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/Akashrahut100/anvaya/graphs/commit-activity)
-
 > **Anvaya** (Sanskrit: अन्वय) means "logical connection" or "coherent reasoning." It represents the systematic thread that links mathematical premises to universal truths.
 
 Anvaya is a production-ready, high-performance mathematics library for Python. It bridges the gap between symbolic reasoning and numerical computation, providing a unified interface for 14 different mathematical domains.
@@ -26,27 +21,26 @@ Anvaya is a production-ready, high-performance mathematics library for Python. I
 ---
 
 ## 📑 Table of Contents
-- [📚 Detailed Documentation](#-detailed-documentation)
-- [📦 Installation](#-installation)
-- [🚀 Quick Start](#-quick-start)
-- [🧮 Domain Guides](#-domain-guides)
-  - [1. Algebra](#1-algebra)
-  - [2. Linear Algebra](#2-linear-algebra)
-  - [3. Calculus](#3-calculus)
-  - [4. Probability](#4-probability)
-  - [5. Statistics](#5-statistics)
-  - [6. Number Theory](#6-number-theory)
-  - [7. Numerical Methods](#7-numerical-methods)
+- [📚 Detailed Documentation](https://github.com/Akashrahut100/anvaya/tree/master/docs)
+- [📦 Installation](https://github.com/Akashrahut100/anvaya/blob/master/docs/installation.md)
+- [🚀 Quick Start](https://github.com/Akashrahut100/anvaya/blob/master/docs/quickstart.md)
+- [🧮 Domain Guides](https://github.com/Akashrahut100/anvaya/tree/master/docs)
+  - [1. Algebra](https://github.com/Akashrahut100/anvaya/blob/master/docs/algebra.md)
+  - [2. Linear Algebra](https://github.com/Akashrahut100/anvaya/blob/master/docs/linear_algebra.md)
+  - [3. Calculus](https://github.com/Akashrahut100/anvaya/blob/master/docs/calculus.md)
+  - [4. Probability](https://github.com/Akashrahut100/anvaya/blob/master/docs/probability.md)
+  - [5. Statistics](https://github.com/Akashrahut100/anvaya/blob/master/docs/statistics.md)
+  - [6. Number Theory](https://github.com/Akashrahut100/anvaya/blob/master/docs/number_theory.md)
+  - [7. Numerical Methods](https://github.com/Akashrahut100/anvaya/blob/master/docs/numerical.md)
   - [8. Complex Analysis](https://github.com/Akashrahut100/anvaya/blob/master/docs/complex_analysis.md)
   - [9. Differential Equations](https://github.com/Akashrahut100/anvaya/blob/master/docs/differential_equations.md)
   - [10. Graph Theory](https://github.com/Akashrahut100/anvaya/blob/master/docs/graph_theory.md)
   - [11. Optimization](https://github.com/Akashrahut100/anvaya/blob/master/docs/optimization.md)
   - [12. Discrete Math](https://github.com/Akashrahut100/anvaya/blob/master/docs/discrete.md)
   - [13. Vector Calculus](https://github.com/Akashrahut100/anvaya/blob/master/docs/vector_calculus.md)
-  - [14. Symbolic Engine](#-symbolic-engine)
-- [🛠 Advanced Features](#-advanced-features)
-- [🧬 Symbolic Engine](#-symbolic-engine)
-- [🤝 Contributing](#-contributing)
+  - [14. Symbolic Engine](https://github.com/Akashrahut100/anvaya/blob/master/docs/symbolic_engine.md)
+- [🛠 Advanced Features](https://github.com/Akashrahut100/anvaya#-advanced-features)
+- [🤝 Contributing](https://github.com/Akashrahut100/anvaya#-contributing)
 
 ---
 
